@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout & Meal Planner</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1.5em 0;
+            margin-bottom: 2em;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        button {
+            padding: 0.75em 1.5em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: transform 0.2s ease, background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        input, select {
+            padding: 0.5em;
+            font-size: 1em;
+            margin-top: 0.5em;
+        }
+
+        #countdown {
+            margin-top: 1em;
+            font-size: 1.5em;
+            color: #d9534f;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Workout & Meal Planner</h1>
+        <p>Your personalized fitness and diet companion</p>
+    </header>
+
+    <section id="workout-timer">
+        <h2>Workout Timer</h2>
+        <label for="timer">Set Timer (minutes):</label>
+        <input type="number" id="timer" min="1" max="120">
+        <button onclick="startTimer()">Start Timer</button>
+        <p id="countdown"></p>
+    </section>
+
+    <section id="meal-planner">
+        <h2>Meal Planner</h2>
+        <p>Select your goal:</p>
+        <select id="goal">
+            <option value="gain">Muscle Gain</option>
+            <option value="lose">Fat Loss</option>
+            <option value="maintain">Maintenance</option>
+        </select>
+        <button onclick="generateMealPlan()">Get Meal Plan</button>
+        <div id="meal-plan"></div>
+    </section>
+
+    <script>
+        function startTimer() {
+            let minutes = document.getElementById('timer').value;
+            let countdownDisplay = document.getElementById('countdown');
+            let timeLeft = minutes * 60;
+
+            const timerInterval = setInterval(() => {
+                let minutesLeft = Math.floor(timeLeft / 60);
+                let secondsLeft = timeLeft % 60;
+                countdownDisplay.textContent = `${minutesLeft}m ${secondsLeft}s`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    alert("Time's up!");
+                } else {
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+
+        function generateMealPlan() {
+            const goal = document.getElementById('goal').value;
+            const mealPlanDiv = document.getElementById('meal-plan');
+            let plan = '';
+
+            if (goal === 'gain') {
+                plan = '<p>Breakfast: Oats & Eggs<br>Lunch: Chicken & Rice<br>Dinner: Salmon & Vegetables</p>';
+            } else if (goal === 'lose') {
+                plan = '<p>Breakfast: Smoothie<br>Lunch: Grilled Chicken Salad<br>Dinner: Stir-fry Vegetables</p>';
+            } else {
+                plan = '<p>Breakfast: Avocado Toast<br>Lunch: Turkey Sandwich<br>Dinner: Pasta with Lean Meat</p>';
+            }
+            mealPlanDiv.innerHTML = plan;
+        }
+    </script>
+</body>
+</html>
