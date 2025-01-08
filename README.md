@@ -1,3 +1,18 @@
+![1735216850313](https://github.com/user-attachments/assets/78e13bba-2b51-4d78-9299-b6322f765628)
+![1735216850298](https://github.com/user-attachments/assets/3dd03b6d-41fa-4fbe-9dc6-ece58d7e8956)
+![1735216850297](https://github.com/user-attachments/assets/b4548019-af13-4f1b-bc1a-a2f89e611dca)
+![1735216850242](https://github.com/user-attachments/assets/12fbebeb-d9e5-4a37-9a34-67dbb6486610)
+![1735216850215](https://github.com/user-attachments/assets/a1e2e0ec-36eb-44e1-bc32-4fd7cc944014)
+![1735216850112](https://github.com/user-attachments/assets/4c2f4c10-1a39-46ca-9a3f-ddfb2af2be44)
+![1735216850030](https://github.com/user-attachments/assets/291fa99b-f2b5-4dfe-a459-c2c1bb33dd3b)
+![1735216849999](https://github.com/user-attachments/assets/5c197863-afd4-4a87-8308-18912bfb2659)
+![1735216849994](https://github.com/user-attachments/assets/38e4f942-d4e8-480f-9fa3-cc2de0c1909a)
+![1735216849796](https://github.com/user-attachments/assets/d8d11574-380d-4037-be53-713a26c83153)
+![1735216849521](https://github.com/user-attachments/assets/e6c7a92d-6c77-47cd-87da-5a9aa2ada4dc)
+![1735216849244](https://github.com/user-attachments/assets/7d887527-98d4-4d74-b745-9c9c87245da1)
+![1735216848703](https://github.com/user-attachments/assets/d67ee201-f446-4c6c-90ef-1a9667c5ea7d)
+![1735216848217](https://github.com/user-attachments/assets/1d4b4eec-15af-44e8-971f-1c4419ea36e3)
+![1735216848019](https://github.com/user-attachments/assets/95bcf195-b42a-47dd-8b7c-55216c6b29e7)
 # FitWeb-App
 
 ## Project Overview
