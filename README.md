@@ -194,7 +194,7 @@ terraform.tfvars
 ```bash
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/<username>/fitweb-ecs-project.git
+git remote add origin https://github.com/DrewTheeFourth/fitweb-ecs-project.git
 git branch -M main
 git push -u origin main
 ```
