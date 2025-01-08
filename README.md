@@ -73,7 +73,7 @@ The infrastructure includes:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<username>/fitweb-ecs-project.git
+git clone https://github.com/DrewTheeFourth/fitweb-ecs-project.git
 cd fitweb-ecs-project
 ```
 
